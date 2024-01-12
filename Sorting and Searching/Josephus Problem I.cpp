@@ -146,3 +146,32 @@ int main()
 
     return 0;
 }
+
+
+
+/*
+    red_black tree method
+    tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> t;
+void solve()
+{
+
+    cin >> n;
+    k = 1;
+    for (int i = 1; i <= n; i++)
+        t.insert(i);
+
+    int idx = k % n;
+
+    while (n--)
+    {
+        auto u = t.find_by_order(idx);
+        cout << *u << " ";
+        t.erase(u);
+        if (n)
+            idx = (idx % n + k) % n;
+    }
+
+    return;
+}
+
+*/
